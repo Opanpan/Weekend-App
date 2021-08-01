@@ -5,7 +5,7 @@ import Logo from "../assets/img/logo.png";
 
 export default function Header() {
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="light" variant="light" className="p-0">
       <Container>
         <Navbar.Brand>
           <Image src={Logo} />
