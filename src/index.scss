@@ -5,6 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+}
+
+section:nth-child(1) {
+  background-image: url("./assets/img/bg-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eebece;
+}
+
+section:nth-child(2) {
+  background-color: #eebece;
 }
 
 code {
