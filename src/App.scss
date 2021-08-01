@@ -1,13 +1,33 @@
 $fontMainColor: black;
 $fontSecondaryColor: white;
 
-.App {
-  text-align: center;
+.button {
+  width: 231px;
+  height: 58px;
+  border-radius: 29px;
+  padding: 20px 83.5px 19px;
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: 100px;
 }
 
 p {
   margin: 0;
   font-size: 12px;
+}
+
+h1 {
+  font-size: 62px;
+  font-weight: 900;
+  margin: 84px 0 0 0;
+  line-height: 51px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 67px;
 }
 
 h4 {
