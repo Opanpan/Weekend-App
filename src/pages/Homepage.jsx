@@ -9,7 +9,7 @@ export default function Homepage() {
       <Row>
         <Col>
           <h1>WEEKEND FROM HOME</h1>
-          <h2>Stay active with a little workout.</h2>
+          <h3>Stay active with a little workout.</h3>
           <Image src={Logo} />
           <Button className="button" variant="light">
             <p>Let's Go</p>
