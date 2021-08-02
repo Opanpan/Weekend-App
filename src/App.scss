@@ -1,4 +1,3 @@
-$fontMainColor: black;
 $fontSecondaryColor: white;
 
 .button {
@@ -25,7 +24,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 21px;
   margin-top: 20px;
   margin-bottom: 67px;
 }
