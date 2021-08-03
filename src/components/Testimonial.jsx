@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./Testimonial.scss";
 import { Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from "axios";
 
 export default function CenterMode() {
+  const [testimonial, setTestimonial] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://wknd-take-home-challenge-api.herokuapp.com/testimonial")
+      .then((response) => setTestimonial(response.data));
+  }, []);
+
   return (
-    <Container fluid>
+    <div className="mt-5 App">
       <Slider
         className="center mx-5"
         centerMode={true}
@@ -17,40 +27,17 @@ export default function CenterMode() {
         width={10000}
         arrows={true}
       >
-        <div>
-          <Card style={{ width: "247px", height: "140px" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-        <div>
-          <Card style={{ width: "247px", height: "140px" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
-        <div>
-          <Card style={{ width: "247px", height: "140px" }}>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
+        {testimonial.map((item, i) => {
+          return (
+            <div key={i} className="img-card">
+              <div class="card-body">
+                <div className="card-title">{item.by}</div>
+                <div className="card-text">{item.testimony}</div>
+              </div>
+            </div>
+          );
+        })}
       </Slider>
-    </Container>
+    </div>
   );
 }
