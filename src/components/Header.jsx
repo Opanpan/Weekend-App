@@ -13,7 +13,7 @@ export default function Header() {
         <Nav className="me-auto">
           <div className="header">
             <p>Good Morning</p>
-            <h4>Hello Fellas</h4>
+            <h5>Hello Fellas</h5>
           </div>
         </Nav>
       </Container>
