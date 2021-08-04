@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Homepage from "./pages/Homepage";
 import Header from "./components/Header";
 import Definition from "./pages/Definition";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <section>
         <Definition />
       </section>
+      <section>
+        <AboutUs />
+      </section>
+      <section></section>
     </Container>
   );
 }
