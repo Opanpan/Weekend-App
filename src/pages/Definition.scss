@@ -5,16 +5,22 @@ h1 {
 }
 
 .definition {
-  margin-top: 200px;
+  width: 100%;
 }
 
 .about-definition {
   text-align: right;
-  width: 619px;
-  height: 160px;
+
+  h3 {
+    width: 619px;
+
+    @media screen and (max-width: 768px) {
+      width: 80%;
+      margin: 63px auto 0 auto;
+    }
+  }
 }
 
 .about-shape {
   margin-left: 283px;
-  margin-top: 93px;
 }

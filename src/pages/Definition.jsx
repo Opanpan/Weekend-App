@@ -1,6 +1,6 @@
 import React from "react";
 import "./Definition.scss";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import secondLego from "../assets/img/lego2.png";
 import ovalShape from "../assets/img/oval.png";
 import Testimonial from "../components/Testimonial";
