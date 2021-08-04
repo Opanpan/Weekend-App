@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Testimonial.scss";
-import { Container, Card } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,16 +15,16 @@ export default function CenterMode() {
   }, []);
 
   return (
-    <div className="mt-5 App">
+    <div className="testimonial">
       <Slider
-        className="center mx-5"
+        className="center mx-5 slider"
         centerMode={true}
         infinite={true}
         slidesToShow={2}
         centerPadding="60px"
         speed={500}
-        width={10000}
         arrows={true}
+        style={{ margin: 0 }}
       >
         {testimonial.map((item, i) => {
           return (
