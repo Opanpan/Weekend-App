@@ -1,0 +1,61 @@
+@import "../App.scss";
+
+h4 {
+  margin-top: 30px;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+h1 {
+  @media screen and (max-width: 375px) {
+  }
+}
+
+.aboutus-second {
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  color: $fontSecondaryColor;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+.aboutus-second-content {
+  width: 80%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 311px;
+  height: 176px;
+  margin: 30px auto 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  height: 72px;
+}
+
+.shape {
+  position: relative;
+  bottom: 250px;
+  margin-bottom: -200px;
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+  }
+}
