@@ -5,10 +5,12 @@ import Homepage from "./pages/Homepage";
 import Header from "./components/Header";
 import Definition from "./pages/Definition";
 import AboutUs from "./pages/AboutUs";
+import AboutUsSecond from "./pages/AboutUsSecond";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Container fluid className="p-0">
+    <div className="containt">
       <section>
         <Header />
         <Homepage />
@@ -19,8 +21,13 @@ function App() {
       <section>
         <AboutUs />
       </section>
-      <section></section>
-    </Container>
+      <section>
+        <AboutUsSecond />
+      </section>
+      <section>
+        <Footer />
+      </section>
+    </div>
   );
 }
 
