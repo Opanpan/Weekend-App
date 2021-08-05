@@ -1,0 +1,27 @@
+.footer {
+  height: 100%;
+  color: white;
+}
+
+.footer-image {
+  margin-top: 67px;
+}
+
+.footer-content {
+  background-color: blue;
+  height: 67px;
+
+  div:nth-child(1) {
+    margin-right: 50%;
+    @media screen and (max-width: 425px) {
+      margin-right: 25%;
+    }
+  }
+
+  p {
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 130px;
+    text-align: center;
+  }
+}
