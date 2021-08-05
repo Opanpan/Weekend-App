@@ -4,8 +4,14 @@ h1 {
   color: $fontSecondaryColor;
 }
 
-.definition {
+.image-definition {
   width: 100%;
+}
+
+h2 {
+  @media screen and (max-width: 320px) {
+    margin-top: 50px;
+  }
 }
 
 .about-definition {
@@ -23,4 +29,7 @@ h1 {
 
 .about-shape {
   margin-left: 283px;
+  @media screen and (max-width: 320px) {
+    margin-left: 100px;
+  }
 }

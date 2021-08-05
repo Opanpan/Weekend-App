@@ -8,7 +8,7 @@ import Testimonial from "../components/Testimonial";
 export default function Definition() {
   return (
     <Container fluid className="p-0">
-      <div className="definition d-flex justify-content-end">
+      <div className="image-definition d-flex justify-content-end">
         <Image src={secondLego} />
       </div>
       <div className="about-definition d-flex justify-content-center">
@@ -31,7 +31,7 @@ export default function Definition() {
         src={ovalShape}
       />
       <div className="d-flex justify-content-center">
-        <h1>Testimonial</h1>
+        <h2>Testimonial</h2>
       </div>
       <Testimonial />
     </Container>
