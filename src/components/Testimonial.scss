@@ -3,16 +3,30 @@
   height: 194px;
   margin: auto;
   position: relative;
-  top: 150px;
+  top: 200px;
   @media screen and (max-width: 768px) {
-    width: 621px;
-    margin: auto;
-    top: 50px;
+    width: 80%;
+    margin-left: 30px;
+    top: 120px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 80%;
+    margin-left: -5px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 80%;
+    margin-left: -12px;
+    top: 110px;
+  }
+  @media screen and (max-width: 320px) {
+    right: 5px;
   }
 }
-
 .slider {
   width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 /* card style start */
@@ -33,6 +47,9 @@
 .card-title {
   font-size: 32px;
   font-weight: 900;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .card-body {
@@ -41,6 +58,9 @@
 
 .card-text {
   margin-top: 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 /* card style end */
