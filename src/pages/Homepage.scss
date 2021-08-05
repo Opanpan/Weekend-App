@@ -4,3 +4,11 @@
   color: $fontSecondaryColor;
   text-align: center;
 }
+
+.button {
+  transition: 200ms;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
